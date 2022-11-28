@@ -8,7 +8,7 @@ import java.util.LinkedList;
 public class ThreadPool extends ThreadGroup {
 
     private boolean isAlive;
-    private LinkedList<Runnable> taskQueue;
+    private LinkedList taskQueue;
     private int threadID;
     private static int threadPoolID;
 
@@ -22,7 +22,7 @@ public class ThreadPool extends ThreadGroup {
 
         isAlive = true;
 
-        taskQueue = new LinkedList<Runnable>();
+        taskQueue = new LinkedList();
         for (int i=0; i<numThreads; i++) {
             new PooledThread().start();
         }

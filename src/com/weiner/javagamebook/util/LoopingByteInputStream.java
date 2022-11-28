@@ -5,7 +5,7 @@ import java.io.IOException;
 
 /**
     The LoopingByteInputStream is a ByteArrayInputStream that
-    loops indefinitely. The looping stops when the close() method
+    loops indefinitly. The looping stops when the close() method
     is called.
     <p>Possible ideas to extend this class:<ul>
     <li>Add an option to only loop a certain number of times.
