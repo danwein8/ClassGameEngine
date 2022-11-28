@@ -63,7 +63,7 @@ public class MouseTest extends GameCore implements KeyListener,
                 RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
         g.setColor(window.getForeground());
         g.drawString("MouseTest. Press Escape to exit.", 5,
-            FONT_SIZE);
+        		DEFAULT_FONT_SIZE);
 
         // draw mouse trail
         for (int i=0; i<count; i++) {

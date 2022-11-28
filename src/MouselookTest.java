@@ -92,8 +92,8 @@ public class MouselookTest extends GameCore
                 RenderingHints.KEY_TEXT_ANTIALIASING,
                 RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
         g.drawString("Press Space to change mouse modes.", 5,
-            FONT_SIZE);
-        g.drawString("Press Escape to exit.", 5, FONT_SIZE*2);
+        		DEFAULT_FONT_SIZE);
+        g.drawString("Press Escape to exit.", 5, DEFAULT_FONT_SIZE*2);
     }
 
 

@@ -81,7 +81,7 @@ public class KeyTest extends GameCore implements KeyListener {
 	{
 		messages.add(message);
 		
-		if (messages.size() >= screen.getHeight() / FONT_SIZE)
+		if (messages.size() >= screen.getHeight() / DEFAULT_FONT_SIZE)
 		{
 			messages.remove(0);
 		}
@@ -105,11 +105,11 @@ public class KeyTest extends GameCore implements KeyListener {
 		
 		// draw messages
 		g.setColor(window.getForeground());
-		int y = FONT_SIZE;
+		int y = DEFAULT_FONT_SIZE;
 		for (int i = 0; i < messages.size(); i++)
 		{
 			g.drawString((String)messages.get(i), 5, y);
-			y += FONT_SIZE;
+			y += DEFAULT_FONT_SIZE;
 		}
 	}
 }
